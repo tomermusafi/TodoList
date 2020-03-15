@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/task_LL_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task"
+            android:textSize="20sp"
+            android:textColor="@color/add_btn_color"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/task_EDT_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your task here"
+            android:layout_marginBottom="10dp"
+            android:inputType="text"
+            android:imeOptions="actionDone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="20sp"
+            android:textColor="@color/add_btn_color"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/task_EDT_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Choose date"
+            android:layout_marginBottom="10dp"
+            android:focusable="false"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time"
+            android:textSize="20sp"
+            android:textColor="@color/add_btn_color"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/task_EDT_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Choose time"
+            android:layout_marginBottom="10dp"
+            android:focusable="false"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Location"
+            android:textSize="20sp"
+            android:textColor="@color/add_btn_color"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/task_EDT_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Choose Location"
+            android:layout_marginBottom="10dp"
+            android:focusable="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/task_LL_description"
+        android:layout_marginTop="5dp">
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:indeterminate="false"
+            android:max="2000"
+            android:progress="0"
+            android:progressDrawable="@drawable/track"
+            android:thumb="@drawable/thumb" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/txv_distance"
+            android:text="0 m"
+            android:textSize="30dp"
+            android:layout_marginTop="10dp"/>
+    </LinearLayout>
+
+
+
+
+
+    <Button
+        android:id="@+id/btn_check"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:text="Save"
+        android:backgroundTint="@color/add_btn_color"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:textColor="@color/white"/>
+
+
+
+
+</RelativeLayout>

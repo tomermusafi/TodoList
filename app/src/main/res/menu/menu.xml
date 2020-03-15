@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_list"
+        android:enabled="true"
+        android:icon="@drawable/img_todo_list"
+        android:title="@string/text_list"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_calendar"
+        android:enabled="true"
+        android:icon="@drawable/img_calendar"
+        android:title="@string/text_calendar"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_map"
+        android:enabled="true"
+        android:icon="@drawable/img_marker_map"
+        android:title="@string/text_map"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/action_done"
+        android:enabled="true"
+        android:icon="@drawable/img_check"
+        android:title="@string/text_done"
+        app:showAsAction="ifRoom" />
+
+</menu>
