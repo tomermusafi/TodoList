@@ -11,6 +11,6 @@
 <img src="https://drive.google.com/uc?export=view&id=1poS6UlKNPzaIl3KfF-huBlnnLGjKy7Ss" alt="drawing" width="100"/>
 <img src="https://drive.google.com/uc?export=view&id=1nd2RW_JJwFQA7ABRL23RZkz5aUbEO_aY" alt="drawing" width="100"/>
 <img src="https://drive.google.com/uc?export=view&id=1UtdJJ8KZCzlZB_VX_UFARhl967muGyR9" alt="drawing" width="100"/>
-<img src="https://drive.google.com/uc?export=view&id=1poS6UlKNPzaIl3KfF-huBlnnLGjKy7Ss" alt="drawing" width="100"/>
+<img src="https://drive.google.com/uc?export=view&id=19KxvVdMMXsiTjKoHvLDH-fgmTM0q97Go" alt="drawing" width="100"/>
 
 </div>
