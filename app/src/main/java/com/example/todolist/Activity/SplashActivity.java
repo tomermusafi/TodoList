@@ -1,4 +1,4 @@
-package com.example.todolist;
+package com.example.todolist.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,6 +8,8 @@ import android.os.Handler;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+
+import com.example.todolist.R;
 
 public class SplashActivity extends AppCompatActivity {
 

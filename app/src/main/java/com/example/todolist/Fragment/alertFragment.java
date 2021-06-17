@@ -1,4 +1,4 @@
-package com.example.todolist;
+package com.example.todolist.Fragment;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -6,10 +6,13 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.CalendarView;
 
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+
+import com.example.todolist.CallBack.CallBack_Activity;
+import com.example.todolist.CallBack.CallBack_RemoveTask;
+import com.example.todolist.R;
 
 public class alertFragment extends Fragment {
 

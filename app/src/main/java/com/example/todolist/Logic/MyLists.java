@@ -1,5 +1,6 @@
-package com.example.todolist;
+package com.example.todolist.Logic;
 
+import com.example.todolist.Model.Task;
 import com.google.firebase.database.DataSnapshot;
 
 import java.util.ArrayList;

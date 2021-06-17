@@ -1,4 +1,4 @@
-package com.example.todolist;
+package com.example.todolist.Activity;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -19,6 +19,17 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.example.todolist.CallBack.CallBack_Activity;
+import com.example.todolist.Fragment.CalendarFragment;
+import com.example.todolist.Fragment.DoneFragment;
+import com.example.todolist.Fragment.TaskFragment;
+import com.example.todolist.Fragment.ToDoListFragment;
+import com.example.todolist.Fragment.alertFragment;
+import com.example.todolist.Service.GPS_Service;
+import com.example.todolist.Fragment.MapFragment;
+import com.example.todolist.Logic.MyLists;
+import com.example.todolist.R;
+import com.example.todolist.Model.Task;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
@@ -32,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
     private TaskFragment taskFragment;
     private CalendarFragment calendarFragment;
     private MapFragment mapFragment;
-    private alertFragment alertFragment;
+    private com.example.todolist.Fragment.alertFragment alertFragment;
     public static ArrayList<Task> allTasks;
     private DoneFragment doneFragment;
 
@@ -46,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
         allTasks = new ArrayList<>();
 
         if(!runtime_permissions()){
-            Intent i =new Intent(getApplicationContext(),GPS_Service.class);
+            Intent i =new Intent(getApplicationContext(), GPS_Service.class);
             startService(i);
         }
 

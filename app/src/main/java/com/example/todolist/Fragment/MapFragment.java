@@ -1,4 +1,4 @@
-package com.example.todolist;
+package com.example.todolist.Fragment;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -12,6 +12,9 @@ import androidx.annotation.Nullable;
 import androidx.core.app.ActivityCompat;
 import androidx.fragment.app.Fragment;
 
+import com.example.todolist.Logic.MyLists;
+import com.example.todolist.R;
+import com.example.todolist.Model.Task;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.MapsInitializer;

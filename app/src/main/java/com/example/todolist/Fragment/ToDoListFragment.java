@@ -1,20 +1,18 @@
-package com.example.todolist;
+package com.example.todolist.Fragment;
 
 import android.content.Context;
 import android.os.Bundle;
-import android.os.Handler;
 import android.util.Log;
 import android.view.LayoutInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
-import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.example.todolist.CallBack.CallBack_Activity;
+import com.example.todolist.Logic.MyList;
+import com.example.todolist.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class ToDoListFragment extends Fragment {
@@ -27,7 +25,7 @@ public class ToDoListFragment extends Fragment {
     public static Context context;
     private MyList myList;
     private String android_id;
-    public static alertFragment alertFragment;
+    public static com.example.todolist.Fragment.alertFragment alertFragment;
 
 
     public ToDoListFragment(){

@@ -1,10 +1,11 @@
-package com.example.todolist;
+package com.example.todolist.Service;
 
 import android.content.Context;
 import android.util.Log;
-import android.view.View;
 
-import androidx.recyclerview.widget.LinearLayoutManager;
+import com.example.todolist.CallBack.CallBack_UsersReady;
+import com.example.todolist.Logic.MyFirebase;
+import com.example.todolist.Model.Task;
 
 import java.util.ArrayList;
 

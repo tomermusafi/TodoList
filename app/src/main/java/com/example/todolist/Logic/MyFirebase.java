@@ -1,4 +1,4 @@
-package com.example.todolist;
+package com.example.todolist.Logic;
 
 import android.content.Context;
 import android.provider.Settings;
@@ -6,6 +6,8 @@ import android.util.Log;
 
 import androidx.annotation.NonNull;
 
+import com.example.todolist.CallBack.CallBack_UsersReady;
+import com.example.todolist.Model.Task;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;

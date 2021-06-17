@@ -1,9 +1,8 @@
-package com.example.todolist;
+package com.example.todolist.Logic;
 
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.os.Handler;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
@@ -12,11 +11,14 @@ import android.widget.Toast;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
+import com.example.todolist.Adapter.Adapter_TaskModel;
+import com.example.todolist.CallBack.CallBack_Activity;
+import com.example.todolist.CallBack.CallBack_UsersReady;
+import com.example.todolist.Fragment.ToDoListFragment;
+import com.example.todolist.R;
+import com.example.todolist.Model.Task;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
@@ -30,7 +32,7 @@ public class MyList {
     private CallBack_Activity callBack_activityList;
 
 
-    private alertFragment alertFragment;
+    private com.example.todolist.Fragment.alertFragment alertFragment;
 
     public MyList() {
     }
@@ -134,7 +136,7 @@ public class MyList {
             public void onItemLongClick(View view, int position, Task task) {
 
                 mposition = position;
-                if(fragmentName.equals("com.example.todolist.ToDoListFragment"))
+                if(fragmentName.equals("com.example.todolist.Fragment.ToDoListFragment"))
                     changeToDone();
                 //callBack_activityList.goToAlert();
                // removeTask(position);
