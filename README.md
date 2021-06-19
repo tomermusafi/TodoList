@@ -4,7 +4,7 @@
 
 ## About
 ##### Smart Task list for everyday use.
-##### Remined you to do your task by the Time of the futur task or by the location of the task.
+##### Reminds you to do your tasks by the time of the futur task or by the location of the task.
 
 ## ScreenShoot
 <div style="display:flex;flex-direction: row;">
